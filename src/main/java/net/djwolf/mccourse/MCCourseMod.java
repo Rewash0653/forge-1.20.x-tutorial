@@ -42,18 +42,6 @@ public class MCCourseMod {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.ALEXANDRITE);
-            event.accept(ModItems.RAW_ALEXANDRITE);
-        }
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
-            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
-            event.accept(ModBlocks.ALEXANDRITE_ORE);
-            event.accept(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE);
-            event.accept(ModBlocks.ENDSTONE_ALEXANDRITE_ORE);
-            event.accept(ModBlocks.NETHER_ALEXANDRITE_ORE);
-        }
     }
 
     @SubscribeEvent
