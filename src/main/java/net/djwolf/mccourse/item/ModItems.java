@@ -1,7 +1,7 @@
 package net.djwolf.mccourse.item;
 
 import net.djwolf.mccourse.MCCourseMod;
-import net.djwolf.mccourse.block.custom.FuelItem;
+import net.djwolf.mccourse.item.custom.FuelItem;
 import net.djwolf.mccourse.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;

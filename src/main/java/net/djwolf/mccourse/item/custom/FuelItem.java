@@ -1,4 +1,4 @@
-package net.djwolf.mccourse.block.custom;
+package net.djwolf.mccourse.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
