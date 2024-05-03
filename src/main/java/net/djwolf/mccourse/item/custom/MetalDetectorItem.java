@@ -1,5 +1,6 @@
 package net.djwolf.mccourse.item.custom;
 
+import net.djwolf.mccourse.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
@@ -73,12 +74,7 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.is(Blocks.IRON_ORE)
-                || blockState.is(Blocks.DIAMOND_ORE)
-                || blockState.is(Blocks.DEEPSLATE_IRON_ORE)
-                || blockState.is(Blocks.DEEPSLATE_DIAMOND_ORE)
-                || blockState.is(Blocks.EMERALD_ORE)
-                || blockState.is(Blocks.DEEPSLATE_EMERALD_ORE);
+        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
 
     }
 }
