@@ -3,9 +3,7 @@ package net.djwolf.mccourse.datagen.loot;
 import net.djwolf.mccourse.block.ModBlocks;
 import net.djwolf.mccourse.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -28,12 +26,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
         this.add(ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.NETHER_ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
-        this.add(ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
+        this.add(ModBlocks.END_STONE_ALEXANDRITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.END_STONE_ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
 
         this.dropSelf(ModBlocks.ALEXANDRITE_STAIRS.get());
         this.add(ModBlocks.ALEXANDRITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.ALEXANDRITE_SLAB.get()));
+
+        this.dropSelf(ModBlocks.ALEXANDRITE_BUTTON.get());
+        this.dropSelf(ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
     }
 
     @Override

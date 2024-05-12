@@ -6,13 +6,11 @@ import net.djwolf.mccourse.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 import java.util.List;
@@ -23,7 +21,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.ALEXANDRITE_ORE.get(),
             ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
             ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
-            ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get());
+            ModBlocks.END_STONE_ALEXANDRITE_ORE.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -60,6 +58,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.ALEXANDRITE_STAIRS.get(), ModBlocks.ALEXANDRITE_BLOCK.get());
         stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.ALEXANDRITE_SLAB.get(), ModBlocks.ALEXANDRITE_BLOCK.get());
+
+        buttonBuilder(ModBlocks.ALEXANDRITE_BUTTON.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
+        pressurePlate(pWriter, ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get(), ModItems.ALEXANDRITE.get());
 
     }
 

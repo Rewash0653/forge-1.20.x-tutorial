@@ -3,9 +3,7 @@ package net.djwolf.mccourse.datagen;
 import net.djwolf.mccourse.MCCourseMod;
 import net.djwolf.mccourse.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -25,15 +23,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALEXANDRITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ALEXANDRITE_ORE);
         blockWithItem(ModBlocks.NETHER_ALEXANDRITE_ORE);
-        blockWithItem(ModBlocks.ENDSTONE_ALEXANDRITE_ORE);
+        blockWithItem(ModBlocks.END_STONE_ALEXANDRITE_ORE);
 
         blockWithItem(ModBlocks.SOUND_BLOCK);
 
+        blockWithItem(ModBlocks.ALEXANDRITE_BLOCK);
+        blockWithItem(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+
         stairsBlock((StairBlock) ModBlocks.ALEXANDRITE_STAIRS.get(), blockTexture(ModBlocks.ALEXANDRITE_BLOCK.get()));
         slabBlock((SlabBlock) ModBlocks.ALEXANDRITE_SLAB.get(), blockTexture(ModBlocks.ALEXANDRITE_BLOCK.get()), blockTexture(ModBlocks.ALEXANDRITE_BLOCK.get()));
+        pressurePlateBlock((PressurePlateBlock) ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get(), blockTexture(ModBlocks.ALEXANDRITE_BLOCK.get()));
+        buttonBlock((ButtonBlock) ModBlocks.ALEXANDRITE_BUTTON.get(), blockTexture(ModBlocks.ALEXANDRITE_BLOCK.get()));
 
         blockItem(ModBlocks.ALEXANDRITE_SLAB);
         blockItem(ModBlocks.ALEXANDRITE_STAIRS);
+        blockItem(ModBlocks.ALEXANDRITE_PRESSURE_PLATE);
+
     }
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {

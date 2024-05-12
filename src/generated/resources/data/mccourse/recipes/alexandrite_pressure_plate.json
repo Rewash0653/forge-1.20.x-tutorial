@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "mccourse:alexandrite"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "mccourse:alexandrite_pressure_plate"
+  },
+  "show_notification": true
+}
