@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "mccourse:alexandrite_block"
+  },
+  "result": "mccourse:alexandrite_slab"
+}

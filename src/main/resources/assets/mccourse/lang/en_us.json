@@ -6,11 +6,14 @@
   "item.mccourse.peat_brick": "Peat Brick",
 
   "block.mccourse.alexandrite_block": "Block Of Alexandrite",
+  "block.mccourse.alexandrite_slab": "Alexandrite Slab",
+  "block.mccourse.alexandrite_stairs": "Alexandrite Stairs",
   "block.mccourse.raw_alexandrite_block": "Block Of Raw Alexandrite",
   "block.mccourse.alexandrite_ore": "Alexandrite Ore",
   "block.mccourse.deepslate_alexandrite_ore": "Deepslate Alexandrite Ore",
   "block.mccourse.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
   "block.mccourse.nether_alexandrite_ore": "Netherrack Alexandrite Ore",
+
   "block.mccourse.sound_block": "Sound Block",
 
   "creativetab.course_tab": "Course Tab",

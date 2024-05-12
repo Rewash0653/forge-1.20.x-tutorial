@@ -27,13 +27,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHER_ALEXANDRITE_ORE.get())
                 .addTag(Tags.Blocks.ORES);
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.ALEXANDRITE_ORE.get(), ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
-                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(), ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
-                        ModBlocks.NETHER_ALEXANDRITE_ORE.get(), ModBlocks.RAW_ALEXANDRITE_BLOCK.get(), ModBlocks.ALEXANDRITE_BLOCK.get());
+                .add(ModBlocks.ALEXANDRITE_ORE.get(),
+                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
+                        ModBlocks.RAW_ALEXANDRITE_BLOCK.get(),
+                        ModBlocks.ALEXANDRITE_BLOCK.get(),
+                        ModBlocks.ALEXANDRITE_SLAB.get(),
+                        ModBlocks.ALEXANDRITE_STAIRS.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.ALEXANDRITE_ORE.get(), ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
-                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(), ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
-                        ModBlocks.NETHER_ALEXANDRITE_ORE.get(), ModBlocks.RAW_ALEXANDRITE_BLOCK.get(), ModBlocks.ALEXANDRITE_BLOCK.get());
+                .add(ModBlocks.ALEXANDRITE_ORE.get(),
+                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.ENDSTONE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_ALEXANDRITE_ORE.get(),
+                        ModBlocks.NETHER_ALEXANDRITE_ORE.get(),
+                        ModBlocks.RAW_ALEXANDRITE_BLOCK.get(),
+                        ModBlocks.ALEXANDRITE_BLOCK.get(),
+                        ModBlocks.ALEXANDRITE_SLAB.get(),
+                        ModBlocks.ALEXANDRITE_STAIRS.get());
     }
 
     @Override
