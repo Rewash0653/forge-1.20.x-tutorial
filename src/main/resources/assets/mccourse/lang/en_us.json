@@ -18,7 +18,9 @@
   "block.mccourse.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
   "block.mccourse.nether_alexandrite_ore": "Netherrack Alexandrite Ore",
   "block.mccourse.alexandrite_button": "Alexandrite button",
-  "block.mccourse.alexandrite_pressure_plate": "Alexandrite pressure plate",
+  "block.mccourse.alexandrite_pressure_plate": "Alexandrite Pressure Plate",
+  "block.mccourse.alexandrite_door": "Alexandrite Door",
+  "block.mccourse.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.mccourse.sound_block": "Sound Block",
 

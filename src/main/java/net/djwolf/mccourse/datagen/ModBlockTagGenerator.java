@@ -39,6 +39,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ALEXANDRITE_FENCE.get(),
                         ModBlocks.ALEXANDRITE_FENCE_GATE.get(),
                         ModBlocks.ALEXANDRITE_WALL.get(),
+                        ModBlocks.ALEXANDRITE_DOOR.get(),
+                        ModBlocks.ALEXANDRITE_TRAPDOOR.get(),
                         ModBlocks.ALEXANDRITE_STAIRS.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.ALEXANDRITE_ORE.get(),
