@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "mccourse:alexandrite_stick"
+    },
+    "W": {
+      "item": "mccourse:alexandrite"
+    }
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "item": "mccourse:alexandrite_fence_gate"
+  },
+  "show_notification": true
+}
