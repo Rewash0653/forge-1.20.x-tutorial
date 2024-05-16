@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mccourse:alexandrite"
+    },
+    "I": {
+      "item": "mccourse:alexandrite_stick"
+    }
+  },
+  "pattern": [
+    "A",
+    "I",
+    "I"
+  ],
+  "result": {
+    "item": "mccourse:alexandrite_shovel"
+  },
+  "show_notification": true
+}
