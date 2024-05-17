@@ -3,6 +3,7 @@ package net.djwolf.mccourse.item;
 import net.djwolf.mccourse.MCCourseMod;
 import net.djwolf.mccourse.item.custom.FuelItem;
 import net.djwolf.mccourse.item.custom.MetalDetectorItem;
+import net.djwolf.mccourse.item.custom.PaxelItem;
 import net.djwolf.mccourse.util.ModTags;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -39,6 +40,8 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.ALEXANDRITE, -4,0.0F, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
             () -> new AxeItem(ModToolTiers.ALEXANDRITE, 5.0F, -2.6F, new Item.Properties()));
+    public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
+            () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 5.0F, -2.6F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

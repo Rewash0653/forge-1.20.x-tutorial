@@ -62,6 +62,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.ALEXANDRITE_FENCE_GATE.get());
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.ALEXANDRITE_WALL.get());
+        this.tag(ModTags.Blocks.PAXEL_MINEABLE)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL);
     }
 
     @Override
