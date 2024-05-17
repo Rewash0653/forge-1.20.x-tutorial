@@ -1,10 +1,7 @@
 package net.djwolf.mccourse.item;
 
 import net.djwolf.mccourse.MCCourseMod;
-import net.djwolf.mccourse.item.custom.FuelItem;
-import net.djwolf.mccourse.item.custom.HammerItem;
-import net.djwolf.mccourse.item.custom.MetalDetectorItem;
-import net.djwolf.mccourse.item.custom.PaxelItem;
+import net.djwolf.mccourse.item.custom.*;
 import net.djwolf.mccourse.util.ModTags;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -32,7 +29,7 @@ public class ModItems {
     public static final RegistryObject<Item> PEAT_BRICK = ITEMS.register("peat_brick",
             () -> new FuelItem(new Item.Properties(), 200));
     public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
-            () -> new SwordItem(ModToolTiers.ALEXANDRITE, 3, -2.0F, new Item.Properties()));
+            () -> new SlowingSwordItem(ModToolTiers.ALEXANDRITE, 3, -2.0F, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
             () -> new PickaxeItem(ModToolTiers.ALEXANDRITE, 1, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_SHOVEL = ITEMS.register("alexandrite_shovel",
@@ -44,7 +41,7 @@ public class ModItems {
     public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
             () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 5.0F, -2.6F, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
-            () -> new HammerItem(ModToolTiers.ALEXANDRITE, 5.0F, -3.4F, new Item.Properties()));
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE, 6.2F, -3.4F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
