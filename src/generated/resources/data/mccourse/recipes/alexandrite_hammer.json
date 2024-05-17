@@ -10,12 +10,12 @@
     }
   },
   "pattern": [
-    "AA",
-    " I",
-    " I"
+    "AAA",
+    "AAA",
+    " I "
   ],
   "result": {
-    "item": "mccourse:alexandrite_hoe"
+    "item": "mccourse:alexandrite_hammer"
   },
   "show_notification": true
 }

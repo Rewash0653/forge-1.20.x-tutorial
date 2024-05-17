@@ -2,6 +2,7 @@ package net.djwolf.mccourse.item;
 
 import net.djwolf.mccourse.MCCourseMod;
 import net.djwolf.mccourse.item.custom.FuelItem;
+import net.djwolf.mccourse.item.custom.HammerItem;
 import net.djwolf.mccourse.item.custom.MetalDetectorItem;
 import net.djwolf.mccourse.item.custom.PaxelItem;
 import net.djwolf.mccourse.util.ModTags;
@@ -42,6 +43,8 @@ public class ModItems {
             () -> new AxeItem(ModToolTiers.ALEXANDRITE, 5.0F, -2.6F, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_PAXEL = ITEMS.register("alexandrite_paxel",
             () -> new PaxelItem(ModToolTiers.ALEXANDRITE, 5.0F, -2.6F, new Item.Properties()));
+    public static final RegistryObject<Item> ALEXANDRITE_HAMMER = ITEMS.register("alexandrite_hammer",
+            () -> new HammerItem(ModToolTiers.ALEXANDRITE, 5.0F, -3.4F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

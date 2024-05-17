@@ -39,6 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ALEXANDRITE_PICKAXE);
         handheldItem(ModItems.ALEXANDRITE_AXE);
         handheldItem(ModItems.ALEXANDRITE_PAXEL);
+        handheldItem(ModItems.ALEXANDRITE_HAMMER);
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "mccourse:alexandrite_axe"
+    },
+    "B": {
+      "item": "mccourse:alexandrite_shovel"
+    },
+    "C": {
+      "item": "mccourse:alexandrite_pickaxe"
+    },
+    "I": {
+      "item": "mccourse:alexandrite_stick"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "mccourse:alexandrite_paxel"
+  },
+  "show_notification": true
+}
