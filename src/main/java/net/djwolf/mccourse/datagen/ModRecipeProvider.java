@@ -160,6 +160,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXANDRITE_LAMP.get())
+                .pattern(" A ")
+                .pattern("ABA")
+                .pattern(" A ")
+                .define('A', ModItems.ALEXANDRITE.get())
+                .define('B', Items.GLOWSTONE)
+                .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ModItems.ALEXANDRITE.get()).build()))
+                .save(pWriter);
 
 
 

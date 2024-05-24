@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-23T16:07:49.5915656	Recipes
+// 1.20.1	2024-05-24T22:07:46.0059814	Recipes
 9b809ab3921e5dcb3174573966c669ec85a0e680 data/mccourse/advancements/recipes/building_blocks/alexandrite_stairs.json
 59a2a9bf8b857e55e614fd0abf1015d3881d0576 data/mccourse/advancements/recipes/decorations/alexandrite_fence.json
 15201a36d0ae05c11f8a82b7b43dcf940f56c7f4 data/mccourse/advancements/recipes/misc/alexandrite.json
@@ -21,6 +21,7 @@ e638de98327fcefb8ed9720908bdc58ddbdf818b data/mccourse/advancements/recipes/misc
 64e2f3c56a937182a04e015ec448d96b058e1871 data/mccourse/advancements/recipes/misc/alexandrite_helmet.json
 9d5a113741fb35bd0f5fcbb2a1550d1c48235b2f data/mccourse/advancements/recipes/misc/alexandrite_hoe.json
 696a2d7141fa4dafa3d5aa0c3cd3b58ee5e2b394 data/mccourse/advancements/recipes/misc/alexandrite_horse_armor.json
+fa9a4441b75737449e86b8064f85436bc09911dc data/mccourse/advancements/recipes/misc/alexandrite_lamp.json
 6f91548a1fc96f59a381cec5625f6b1dd1b7a78b data/mccourse/advancements/recipes/misc/alexandrite_leggings.json
 29f00141a26129c8d5bc11a16fca5d9f62dbcfbf data/mccourse/advancements/recipes/misc/alexandrite_paxel.json
 bef480a9042570b39c943ec81605dfb17e60c73e data/mccourse/advancements/recipes/misc/alexandrite_pickaxe.json
@@ -62,6 +63,7 @@ ac67ecd8ac366366c599fb56d87cf4f7cd80ae15 data/mccourse/recipes/alexandrite_from_
 99a3841dad6c115d23992991ed3ddf6d194e4719 data/mccourse/recipes/alexandrite_helmet.json
 23072cf5aecfb5a937c1156cb4503dbdb3535011 data/mccourse/recipes/alexandrite_hoe.json
 9e2af871f001edb11dd4cb875438f0f13f17a47a data/mccourse/recipes/alexandrite_horse_armor.json
+76da1ca7abc5ebaae6709a9bdd305983080789e0 data/mccourse/recipes/alexandrite_lamp.json
 81c158ec76fcc31d9c46d8bb5799b32009eb214f data/mccourse/recipes/alexandrite_leggings.json
 f8bf287e4a1eb3d8a2b7793bb75c8e26323daa03 data/mccourse/recipes/alexandrite_paxel.json
 2e2b84bcf6b207b2632cf2a8a1c1bb8495c67beb data/mccourse/recipes/alexandrite_pickaxe.json
