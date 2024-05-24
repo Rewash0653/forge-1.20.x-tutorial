@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:tnt"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "I",
+    "A",
+    "I"
+  ],
+  "result": {
+    "item": "mccourse:explode_stick"
+  },
+  "show_notification": true
+}

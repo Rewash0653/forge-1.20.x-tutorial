@@ -2,6 +2,7 @@ package net.djwolf.mccourse;
 
 import com.mojang.logging.LogUtils;
 import net.djwolf.mccourse.block.ModBlocks;
+import net.djwolf.mccourse.enchantment.ModEnchantments;
 import net.djwolf.mccourse.item.ModCreativeModeTabs;
 import net.djwolf.mccourse.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,8 @@ public class MCCourseMod {
         ModBlocks.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModEnchantments.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
