@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
                         output.accept(ModItems.ALEXANDRITE_BOOTS.get());
                         output.accept(ModItems.ALEXANDRITE_HORSE_ARMOR.get());
+                        output.accept(ModItems.DATA_TABLET.get());
                         //output.accept(ModItems.EXPLODE_STICK.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());

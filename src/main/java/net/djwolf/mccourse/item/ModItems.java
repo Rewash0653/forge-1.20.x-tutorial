@@ -53,8 +53,10 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_HORSE_ARMOR = ITEMS.register("alexandrite_horse_armor",
             () -> new HorseArmorItem(13, new ResourceLocation(MCCourseMod.MOD_ID, "textures/entity/horse/armor/horse_armor_alexandrite.png"), new Item.Properties()));
-public static final RegistryObject<Item> EXPLODE_STICK = ITEMS.register("explode_stick",
+    public static final RegistryObject<Item> EXPLODE_STICK = ITEMS.register("explode_stick",
             () -> new ExplodeItem(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
