@@ -2,6 +2,7 @@ package net.djwolf.mccourse.block;
 
 import net.djwolf.mccourse.MCCourseMod;
 import net.djwolf.mccourse.block.custom.AlexandriteLampBlock;
+import net.djwolf.mccourse.block.custom.KohlrabiCropBlock;
 import net.djwolf.mccourse.block.custom.SoundBlock;
 import net.djwolf.mccourse.item.ModItems;
 import net.minecraft.sounds.SoundEvent;
@@ -59,6 +60,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_LAMP = registerBlock("alexandrite_lamp",
         () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLUE).sound(SoundType.GLASS)
                 .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final RegistryObject<Block> KOHLRABI_CROP = BLOCKS.register("kohlrabi_crop",
+            () -> new KohlrabiCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission().noOcclusion()));
 
 
     public static final RegistryObject<Block> ALEXANDRITE_ORE = registerBlock("alexandrite_ore",

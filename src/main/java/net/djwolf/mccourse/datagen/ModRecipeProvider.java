@@ -57,6 +57,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_AXE.get())
                 .pattern("AA")
                 .pattern("IA")
@@ -66,6 +67,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_SHOVEL.get())
                 .pattern("A")
                 .pattern("I")
@@ -75,6 +77,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_HOE.get())
                 .pattern("AA")
                 .pattern(" I")
@@ -84,6 +87,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_SWORD.get())
                 .pattern("A")
                 .pattern("A")
@@ -93,6 +97,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_PAXEL.get())
                 .pattern("ABC")
                 .pattern(" I ")
@@ -104,6 +109,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_HAMMER.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -113,6 +119,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EXPLODE_STICK.get())
                 .pattern("I")
                 .pattern("A")
@@ -122,6 +129,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_HELMET.get())
                 .pattern("AAA")
                 .pattern("A A")
@@ -129,6 +137,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_CHESTPLATE.get())
                 .pattern("A A")
                 .pattern("AAA")
@@ -137,6 +146,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_LEGGINGS.get())
                 .pattern("AAA")
                 .pattern("A A")
@@ -145,6 +155,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_BOOTS.get())
                 .pattern("A A")
                 .pattern("A A")
@@ -152,6 +163,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ALEXANDRITE_HORSE_ARMOR.get())
                 .pattern("  A")
                 .pattern("AAA")
@@ -160,6 +172,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXANDRITE_LAMP.get())
                 .pattern(" A ")
                 .pattern("ABA")
@@ -169,6 +182,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_alexandrite", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DATA_TABLET.get())
                 .pattern("AAA")
                 .pattern("ABA")
@@ -193,6 +207,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 RecipeCategory.MISC, ModBlocks.RAW_ALEXANDRITE_BLOCK.get(),
                 "mccourse:raw_alexandrite", "alexandrite",
                 "mccourse:raw_alexandrite_block", "alexandrite");
+
         oreSmelting(pWriter, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(),
                 0.25f, 200, "alexandrite");
         oreBlasting(pWriter, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(),
@@ -209,9 +224,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         pressurePlate(pWriter, ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get(), ModItems.ALEXANDRITE.get());
 
         fenceBuilder(ModBlocks.ALEXANDRITE_FENCE.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
-        fenceGateBuilder(ModBlocks.ALEXANDRITE_FENCE_GATE.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
         wall(pWriter, RecipeCategory.MISC, ModBlocks.ALEXANDRITE_WALL.get(), ModItems.ALEXANDRITE.get());
 
+        fenceGateBuilder(ModBlocks.ALEXANDRITE_FENCE_GATE.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
         doorBuilder(ModBlocks.ALEXANDRITE_DOOR.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
         trapdoorBuilder(ModBlocks.ALEXANDRITE_TRAPDOOR.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).unlockedBy("has_alexandrite", has(ModItems.ALEXANDRITE.get())).save(pWriter);
 

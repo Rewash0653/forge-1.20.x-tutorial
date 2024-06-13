@@ -22,21 +22,28 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.ALEXANDRITE);
         simpleItem(ModItems.RAW_ALEXANDRITE);
+
         simpleItem(ModItems.METAL_DETECTOR);
+
         simpleItem(ModItems.KOHLRABI);
+        simpleItem(ModItems.KOHLRABI_SEEDS);
+
         simpleItem(ModItems.PEAT_BRICK);
+
         simpleItem(ModItems.ALEXANDRITE_STICK);
 
         simpleItem(ModItems.ALEXANDRITE_HELMET);
         simpleItem(ModItems.ALEXANDRITE_CHESTPLATE);
         simpleItem(ModItems.ALEXANDRITE_LEGGINGS);
         simpleItem(ModItems.ALEXANDRITE_BOOTS);
-
         simpleItem(ModItems.ALEXANDRITE_HORSE_ARMOR);
+
+
 
         //simpleItem(ModItems.DATA_TABLET);
 
         buttonItem(ModBlocks.ALEXANDRITE_BUTTON, ModBlocks.ALEXANDRITE_BLOCK);
+
         fenceItem(ModBlocks.ALEXANDRITE_FENCE, ModBlocks.ALEXANDRITE_BLOCK);
         wallItem(ModBlocks.ALEXANDRITE_WALL, ModBlocks.ALEXANDRITE_BLOCK);
 
@@ -49,6 +56,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ALEXANDRITE_AXE);
         handheldItem(ModItems.ALEXANDRITE_PAXEL);
         handheldItem(ModItems.ALEXANDRITE_HAMMER);
+
         handheldItem(ModItems.EXPLODE_STICK);
     }
 

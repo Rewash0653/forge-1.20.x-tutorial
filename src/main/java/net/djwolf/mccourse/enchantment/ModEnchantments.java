@@ -17,6 +17,7 @@ public class ModEnchantments {
             ENCHANTMENTS.register("lightning_striker",
                     () -> new LightningStrikerEnchantment(Enchantment.Rarity.COMMON, EnchantmentCategory.WEAPON,
                             EquipmentSlot.MAINHAND));
+
     public static RegistryObject<Enchantment> LIGHTNING_THORNS =
             ENCHANTMENTS.register("lightning_thorns",
                     () -> new LightningThornsEnchantment(Enchantment.Rarity.COMMON, EnchantmentCategory.ARMOR,
