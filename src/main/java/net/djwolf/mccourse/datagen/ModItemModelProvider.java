@@ -49,6 +49,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItem(ModBlocks.ALEXANDRITE_DOOR);
 
+        simpleBlockItem(ModBlocks.SNAPDRAGON);
+
         handheldItem(ModItems.ALEXANDRITE_SHOVEL);
         handheldItem(ModItems.ALEXANDRITE_SWORD);
         handheldItem(ModItems.ALEXANDRITE_HOE);

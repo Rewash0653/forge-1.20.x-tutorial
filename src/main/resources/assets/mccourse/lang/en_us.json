@@ -23,20 +23,28 @@
   "item.mccourse.explode_stick": "Explode Stick",
 
   "block.mccourse.alexandrite_block": "Block Of Alexandrite",
+  "block.mccourse.raw_alexandrite_block": "Block Of Raw Alexandrite",
+
   "block.mccourse.alexandrite_slab": "Alexandrite Slab",
   "block.mccourse.alexandrite_stairs": "Alexandrite Stairs",
+  "block.mccourse.alexandrite_wall": "Alexandrite Wal",
+
   "block.mccourse.alexandrite_fence": "Alexandrite Fence",
   "block.mccourse.alexandrite_fence_gate": "Alexandrite Fence Gate",
-  "block.mccourse.alexandrite_wall": "Alexandrite Wal",
-  "block.mccourse.raw_alexandrite_block": "Block Of Raw Alexandrite",
+
   "block.mccourse.alexandrite_ore": "Alexandrite Ore",
   "block.mccourse.deepslate_alexandrite_ore": "Deepslate Alexandrite Ore",
   "block.mccourse.end_stone_alexandrite_ore": "End Stone Alexandrite Ore",
   "block.mccourse.nether_alexandrite_ore": "Netherrack Alexandrite Ore",
+
   "block.mccourse.alexandrite_button": "Alexandrite button",
   "block.mccourse.alexandrite_pressure_plate": "Alexandrite Pressure Plate",
+
   "block.mccourse.alexandrite_door": "Alexandrite Door",
   "block.mccourse.alexandrite_trapdoor": "Alexandrite Trapdoor",
+
+  "block.mccourse.snapdragon": "Snapdragon",
+
   "block.mccourse.alexandrite_lamp": "Alexandrite Lamp",
 
   "block.mccourse.sound_block": "Sound Block",
@@ -46,11 +54,15 @@
   "enchantment.mccourse.lightning_striker": "Lightning Striker",
   "enchantment.mccourse.lightning_thorns": "Lightning Thorns",
 
+  "enchantment.mccourse.bow_teleport": "Bow Teleport",
+
   "item.mccourse.metal_detector.no_valuables": "No Valuables Found!",
 
   "tooltip.mccourse.metal_detector.tooltip.shift": "Right Click on Blocks to find Valuables!",
   "tooltip.mccourse.metal_detector.tooltip": "Press §eSHIFT§r for more Information!",
 
-  "tooltip.mccourse.sound_block.tooltip": "Plays a Sound when Right-Clicking, explodes when broken"
+  "tooltip.mccourse.sound_block.tooltip": "Plays a Sound when Right-Clicking, explodes when broken",
+
+  "sound.mccourse.metal_detector_found_ore": "Metal Detector Found an Ore"
 
 }

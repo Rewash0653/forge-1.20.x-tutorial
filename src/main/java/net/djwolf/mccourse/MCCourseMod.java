@@ -6,8 +6,11 @@ import net.djwolf.mccourse.enchantment.ModEnchantments;
 import net.djwolf.mccourse.item.ModCreativeModeTabs;
 import net.djwolf.mccourse.item.ModItemProperties;
 import net.djwolf.mccourse.item.ModItems;
+import net.djwolf.mccourse.sound.ModSounds;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,6 +39,8 @@ public class MCCourseMod {
 
         ModEnchantments.register(modEventBus);
 
+        ModSounds.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -48,7 +53,9 @@ public class MCCourseMod {
             ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI.get(), 0.35f);
             ComposterBlock.COMPOSTABLES.put(ModItems.KOHLRABI_SEEDS.get(), 0.20f);
 
-                });
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SNAPDRAGON.getId(), ModBlocks.POTTED_SNAPDRAGON);
+
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

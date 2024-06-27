@@ -21,8 +21,12 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> LIGHTNING_THORNS =
             ENCHANTMENTS.register("lightning_thorns",
                     () -> new LightningThornsEnchantment(Enchantment.Rarity.COMMON, EnchantmentCategory.ARMOR,
-                            EquipmentSlot.CHEST, EquipmentSlot.HEAD, EquipmentSlot.FEET, EquipmentSlot.FEET));
+                            EquipmentSlot.CHEST, EquipmentSlot.HEAD, EquipmentSlot.LEGS, EquipmentSlot.FEET));
 
+    public static RegistryObject<Enchantment> BOW_TELEPORT =
+            ENCHANTMENTS.register("bow_teleport",
+                    () -> new BowTeleportEnchantment(Enchantment.Rarity.COMMON, EnchantmentCategory.BOW,
+                            EquipmentSlot.MAINHAND));
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
 

@@ -1,6 +1,7 @@
 package net.djwolf.mccourse.item.custom;
 
 import net.djwolf.mccourse.item.ModItems;
+import net.djwolf.mccourse.sound.ModSounds;
 import net.djwolf.mccourse.util.InventoryUtil;
 import net.djwolf.mccourse.util.ModTags;
 import net.minecraft.client.gui.screens.Screen;
@@ -8,6 +9,7 @@ import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -29,36 +31,29 @@ public class MetalDetectorItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-        if(!pContext.getLevel().isClientSide()){
+        if(!pContext.getLevel().isClientSide()) {
             BlockPos positionClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
 
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
-                BlockState blockState_below = pContext.getLevel().getBlockState(positionClicked.below(i));
-                BlockState blockState_above = pContext.getLevel().getBlockState(positionClicked.above(i));
+                BlockState blockState = pContext.getLevel().getBlockState(positionClicked.below(i));
 
-                if(belowIsValuableBlock(blockState_below)) {
-                    outputValuableCoordinates(positionClicked.below(i), player, blockState_below.getBlock());
+                if(isValuableBlock(blockState)) {
+                    outputValuableCoordinates(positionClicked.below(i), player, blockState.getBlock());
                     foundBlock = true;
 
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
-                        addDataToDataTablet(player, positionClicked.below(i), blockState_below.getBlock());
+                        addDataToDataTablet(player, positionClicked.below(i), blockState.getBlock());
                     }
 
-                    break;
-                }
-                if(aboveIsValuableBlock(blockState_above)){
-                    outputValuableCoordinates(positionClicked.above(i), player, blockState_above.getBlock());
-                    foundBlock = true;
-
-                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET.get())) {
-                        addDataToDataTablet(player, positionClicked.above(i), blockState_above.getBlock());
-                    }
+                    pContext.getLevel().playSeededSound(null, player.getX(), player.getY(), player.getZ(),
+                            ModSounds.METAL_DETECTOR_FOUND_ORE.get(), SoundSource.BLOCKS, 1f, 1f, 0);
 
                     break;
                 }
             }
+
             if(!foundBlock) {
                 outputNoValuableFound(player);
             }
@@ -70,13 +65,11 @@ public class MetalDetectorItem extends Item {
         return InteractionResult.SUCCESS;
     }
 
-
-
     private void addDataToDataTablet(Player player, BlockPos below, Block block) {
         ItemStack dataTablet = player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET.get()));
 
         CompoundTag data = new CompoundTag();
-        data.putString("mccourse.found_ore","Valuable found: " + I18n.get(block.getDescriptionId())
+        data.putString("mccourse.found_ore","Valuable Found: " + I18n.get(block.getDescriptionId())
                 + " at (" + below.getX() + ", " + below.getY() + ", " + below.getZ() + ")");
 
         dataTablet.setTag(data);
@@ -98,14 +91,11 @@ public class MetalDetectorItem extends Item {
     }
 
     private void outputValuableCoordinates(BlockPos below, Player player, Block block) {
-        player.sendSystemMessage(Component.literal("Valuable found: " + I18n.get(block.getDescriptionId())
+        player.sendSystemMessage(Component.literal("Valuable Found: " + I18n.get(block.getDescriptionId())
                 + " at (" + below.getX() + ", " + below.getY() + ", " + below.getZ() + ")"));
     }
 
-    private boolean belowIsValuableBlock(BlockState blockState) {
-        return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
-    }
-    private boolean aboveIsValuableBlock(BlockState blockState) {
+    private boolean isValuableBlock(BlockState blockState) {
         return blockState.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
     }
 }
