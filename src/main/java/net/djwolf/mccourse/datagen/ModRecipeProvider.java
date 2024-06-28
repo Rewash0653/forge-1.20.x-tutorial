@@ -120,7 +120,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .of(ModItems.ALEXANDRITE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EXPLODE_STICK.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EXPLODE_STAFF.get())
                 .pattern("I")
                 .pattern("A")
                 .pattern("I")

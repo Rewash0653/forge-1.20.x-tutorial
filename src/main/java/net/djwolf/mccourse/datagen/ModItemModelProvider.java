@@ -60,7 +60,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.ALEXANDRITE_PAXEL);
         handheldItem(ModItems.ALEXANDRITE_HAMMER);
 
-        handheldItem(ModItems.EXPLODE_STICK);
+        complexBlock(ModBlocks.GEM_EMPOWERING_STATION.get());
+    }
+
+    private ItemModelBuilder complexBlock(Block block) {
+        return withExistingParent(ForgeRegistries.BLOCKS.getKey(block).getPath(), new ResourceLocation(MCCourseMod.MOD_ID,
+                "block/" + ForgeRegistries.BLOCKS.getKey(block).getPath()));
     }
 
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {

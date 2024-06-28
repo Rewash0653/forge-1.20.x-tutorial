@@ -49,6 +49,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         customLamp();
 
+        horizontalBlock(ModBlocks.GEM_EMPOWERING_STATION.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/gem_empowering_station")));
 
         blockItem(ModBlocks.ALEXANDRITE_STAIRS);
         blockItem(ModBlocks.ALEXANDRITE_SLAB);

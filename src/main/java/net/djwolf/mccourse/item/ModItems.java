@@ -55,14 +55,17 @@ public class ModItems {
             () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> ALEXANDRITE_HORSE_ARMOR = ITEMS.register("alexandrite_horse_armor",
             () -> new HorseArmorItem(13, new ResourceLocation(MCCourseMod.MOD_ID, "textures/entity/horse/armor/horse_armor_alexandrite.png"), new Item.Properties()));
-    public static final RegistryObject<Item> EXPLODE_STICK = ITEMS.register("explode_stick",
-            () -> new ExplodeItem(new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> EXPLODE_STAFF = ITEMS.register("explode_staff",
+            () -> new ExplodeItem(new Item.Properties().fireResistant().durability(900)));
     public static final RegistryObject<Item> DATA_TABLET = ITEMS.register("data_tablet",
             () -> new DataTabletItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> KOHLRABI_SEEDS = ITEMS.register("kohlrabi_seeds",
             () -> new ItemNameBlockItem(ModBlocks.KOHLRABI_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> BAR_BRAWL_RECORD = ITEMS.register("bar_brawl_record",
             () -> new RecordItem(4, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2440));
+
+    public static final RegistryObject<Item> RADIATION_STAFF = ITEMS.register("radiation_staff",
+            () -> new Item(new Item.Properties().durability(1024)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

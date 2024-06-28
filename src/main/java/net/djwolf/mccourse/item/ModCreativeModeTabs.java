@@ -48,7 +48,9 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.BAR_BRAWL_RECORD.get());
 
-                        //output.accept(ModItems.EXPLODE_STICK.get());
+                        output.accept(ModItems.RADIATION_STAFF.get());
+
+                        output.accept(ModItems.EXPLODE_STAFF.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
@@ -76,6 +78,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SNAPDRAGON.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_LAMP.get());
+
+                        output.accept(ModBlocks.GEM_EMPOWERING_STATION.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -26,28 +26,28 @@ public class ExplodeItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if (!pLevel.isClientSide) {
-            int radius = 1;
-            BlockPos playerPos = pPlayer.blockPosition();
-            for (int x = -radius; x <= radius; x++) {
-                for (int y = -radius; y <= radius; y++) {
-                    for (int z = -radius; z <= radius; z++) {
-                        BlockPos pos = playerPos.offset(x, y, z);
-                        BlockPos firePos = pos.above();
-                        BlockState blockState = pLevel.getBlockState(pos);
-                        //pLevel.explode(pPlayer, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), 5.0f, Level.ExplosionInteraction.TNT);
-                        if ((pLevel.isEmptyBlock(firePos) || pLevel.getBlockState(firePos) == Blocks.GRASS.defaultBlockState()) && blockState.isFaceSturdy(pLevel, pos, Direction.UP)) {
-                            pLevel.setBlock(firePos, Blocks.FIRE.defaultBlockState(), 11);
-                        }
+            //int radius = 1;
+            //BlockPos playerPos = pPlayer.blockPosition();
+            //for (int x = -radius; x <= radius; x++) {
+                //for (int y = -radius; y <= radius; y++) {
+                    //for (int z = -radius; z <= radius; z++) {
+                        //BlockPos pos = playerPos.offset(x, y, z);
+                        //BlockPos firePos = pos.above();
+                        //BlockState blockState = pLevel.getBlockState(pos);
+            pLevel.explode(pPlayer, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), 5.0f, Level.ExplosionInteraction.TNT);
+                        //if ((pLevel.isEmptyBlock(firePos) || pLevel.getBlockState(firePos) == Blocks.GRASS.defaultBlockState()) && blockState.isFaceSturdy(pLevel, pos, Direction.UP)) {
+                            //pLevel.setBlock(firePos, Blocks.FIRE.defaultBlockState(), 11);
+                        //}
                         //pPlayer.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 200, 3, false, false), pPlayer);
                         //pPlayer.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 2000000000, 1, false, false), pPlayer);
 
 
                     }
 
-                }
-            }
 
-        }
+
+
+
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 }

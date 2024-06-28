@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-25T18:08:24.7395495	Recipes
+// 1.20.1	2024-06-28T12:09:08.0596214	Recipes
 9b809ab3921e5dcb3174573966c669ec85a0e680 data/mccourse/advancements/recipes/building_blocks/alexandrite_stairs.json
 59a2a9bf8b857e55e614fd0abf1015d3881d0576 data/mccourse/advancements/recipes/decorations/alexandrite_fence.json
 15201a36d0ae05c11f8a82b7b43dcf940f56c7f4 data/mccourse/advancements/recipes/misc/alexandrite.json
@@ -34,7 +34,7 @@ b6a99a3d5c309e5919bfda1a2e75bcec8c172736 data/mccourse/advancements/recipes/misc
 50bbad363dfaa03a41cd468571e1a0ac8fe9c959 data/mccourse/advancements/recipes/misc/alexandrite_wall.json
 8822b0fbe82909214a1bc118bfdefaa93d124773 data/mccourse/advancements/recipes/misc/alexandrite_wall_from_alexandrite_block_stonecutting.json
 1a74102fabd008522dc9142b502eb9a40f6fa7cd data/mccourse/advancements/recipes/misc/data_tablet.json
-3e9e13e752e11e7ef2b5551353b9c30a566a20a6 data/mccourse/advancements/recipes/misc/explode_stick.json
+94e2efce936dd3e192b3a0157c6a394cdc0df5ad data/mccourse/advancements/recipes/misc/explode_staff.json
 e73e936ffd0b7189e92d0e3ee64b131a5231a4c2 data/mccourse/advancements/recipes/misc/raw_alexandrite.json
 9ee2cebe9c88508ec4dc7e5d38cbf87b45c51dd6 data/mccourse/advancements/recipes/misc/raw_alexandrite_block.json
 951bd4606c0db9b5f4f5b4e6095c26a3a5c5f0ad data/mccourse/advancements/recipes/redstone/alexandrite_button.json
@@ -80,6 +80,6 @@ b2182f29f87646ac529ce316458f104d97ce2b82 data/mccourse/recipes/alexandrite_stair
 598992368a0a75fdb898b0f657e309cbecab112b data/mccourse/recipes/alexandrite_wall.json
 95b2753fb11049a4de0d27ec1d99b7b6bc6fe62e data/mccourse/recipes/alexandrite_wall_from_alexandrite_block_stonecutting.json
 9e80bab313cdfa5d2bca6bc2961be3df0d8e393c data/mccourse/recipes/data_tablet.json
-4334bad4dc50999f2657842ee9198b2991a5bf8c data/mccourse/recipes/explode_stick.json
+89bca84d02c16c961d413760795901d4534f39ea data/mccourse/recipes/explode_staff.json
 6d219fbbf4741f7e642c23aa37a0f98f1f935e87 data/mccourse/recipes/raw_alexandrite.json
 361ee738a087c70c075acc2f440215157c9dd2d0 data/mccourse/recipes/raw_alexandrite_block.json
