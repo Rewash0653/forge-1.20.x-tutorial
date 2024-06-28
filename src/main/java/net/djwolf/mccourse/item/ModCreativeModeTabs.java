@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.DATA_TABLET.get());
 
+                        output.accept(ModItems.BAR_BRAWL_RECORD.get());
+
                         //output.accept(ModItems.EXPLODE_STICK.get());
 
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());

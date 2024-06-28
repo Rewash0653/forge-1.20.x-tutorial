@@ -83,7 +83,7 @@ public class ModEvents {
     }
 
     @SubscribeEvent
-    public static void test(ProjectileImpactEvent event){
+    public static void bow_teleport(ProjectileImpactEvent event){
         Player player = ((Player) event.getProjectile().getOwner());
         Entity arrow = event.getEntity();
         if(player.getItemInHand(InteractionHand.MAIN_HAND).getItem() instanceof BowItem || player.getItemInHand(InteractionHand.MAIN_HAND).getItem() instanceof CrossbowItem) {
