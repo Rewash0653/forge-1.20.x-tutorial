@@ -52,6 +52,10 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.EXPLODE_STAFF.get());
 
+                        output.accept(ModItems.ALEXANDRITE_BOW.get());
+
+                        output.accept(ModItems.ALEXANDRITE_SHIELD.get());
+
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
 
